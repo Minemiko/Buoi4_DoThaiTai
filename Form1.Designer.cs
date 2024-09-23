@@ -56,6 +56,10 @@
             txtHT2 = new TextBox();
             txtGT2 = new TextBox();
             dtpNS2 = new DateTimePicker();
+            btnD = new Button();
+            btnF = new Button();
+            btnD2 = new Button();
+            btnF2 = new Button();
             ((System.ComponentModel.ISupportInitialize)dgv1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgv2).BeginInit();
             SuspendLayout();
@@ -151,7 +155,7 @@
             // 
             // btnS
             // 
-            btnS.Location = new Point(275, 240);
+            btnS.Location = new Point(10, 240);
             btnS.Name = "btnS";
             btnS.Size = new Size(100, 33);
             btnS.TabIndex = 3;
@@ -232,7 +236,7 @@
             // 
             // btnS2
             // 
-            btnS2.Location = new Point(673, 240);
+            btnS2.Location = new Point(410, 240);
             btnS2.Name = "btnS2";
             btnS2.Size = new Size(100, 33);
             btnS2.TabIndex = 3;
@@ -288,11 +292,55 @@
             dtpNS2.Size = new Size(237, 33);
             dtpNS2.TabIndex = 2;
             // 
+            // btnD
+            // 
+            btnD.Location = new Point(275, 240);
+            btnD.Name = "btnD";
+            btnD.Size = new Size(100, 33);
+            btnD.TabIndex = 5;
+            btnD.Text = "Xóa";
+            btnD.UseVisualStyleBackColor = true;
+            btnD.Click += btnD_Click;
+            // 
+            // btnF
+            // 
+            btnF.Location = new Point(143, 240);
+            btnF.Name = "btnF";
+            btnF.Size = new Size(100, 33);
+            btnF.TabIndex = 5;
+            btnF.Text = "Sửa";
+            btnF.UseVisualStyleBackColor = true;
+            btnF.Click += btnF_Click;
+            // 
+            // btnD2
+            // 
+            btnD2.Location = new Point(673, 240);
+            btnD2.Name = "btnD2";
+            btnD2.Size = new Size(100, 33);
+            btnD2.TabIndex = 5;
+            btnD2.Text = "Xóa";
+            btnD2.UseVisualStyleBackColor = true;
+            btnD2.Click += btnD2_Click;
+            // 
+            // btnF2
+            // 
+            btnF2.Location = new Point(541, 240);
+            btnF2.Name = "btnF2";
+            btnF2.Size = new Size(100, 33);
+            btnF2.TabIndex = 5;
+            btnF2.Text = "Sửa";
+            btnF2.UseVisualStyleBackColor = true;
+            btnF2.Click += btnF2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(12F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(785, 452);
+            Controls.Add(btnF2);
+            Controls.Add(btnF);
+            Controls.Add(btnD2);
+            Controls.Add(btnD);
             Controls.Add(dgv2);
             Controls.Add(dgv1);
             Controls.Add(btnS2);
@@ -361,5 +409,9 @@
         private TextBox txtHT2;
         private TextBox txtGT2;
         private DateTimePicker dtpNS2;
+        private Button btnD;
+        private Button btnF;
+        private Button btnD2;
+        private Button btnF2;
     }
 }

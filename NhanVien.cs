@@ -9,16 +9,16 @@ namespace Buoi4_DoThaiTai
     internal class NhanVien : Nguoi
     {
         string msnv;
-        int luong;
+        double luong;
         string chucVu;
 
         public string Msnv { get => msnv; set => msnv = value; }
-        public int Luong { get => luong; set => luong = value; }
+        public double Luong { get => luong; set => luong = value; }
         public string ChucVu { get => chucVu; set => chucVu = value; }
 
         public NhanVien() : base() { }
 
-        public NhanVien(string HoTen, DateTime NgaySinh, string GioiTinh, string Msnv, int Luong, string ChucVu) : base(HoTen,NgaySinh,GioiTinh)
+        public NhanVien(string HoTen, DateTime NgaySinh, string GioiTinh, string Msnv, double Luong, string ChucVu) : base(HoTen,NgaySinh,GioiTinh)
         {
             this.msnv = Msnv;
             this.luong = Luong;
